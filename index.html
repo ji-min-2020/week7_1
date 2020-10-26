@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.btn').mouseover(function() {
+				$(this).parents('#wrap').addClass('active');
+			});
+
+			$('.btn').mouseleave(function() {
+				$(this).parents('#wrap').removeClass('active');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="btn"></div>
+	</div>
+</body>
+</html>
